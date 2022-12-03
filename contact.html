@@ -23,7 +23,7 @@
     <nav class="navbar">
         <ul>
               <li><a href="index.html">home</a></li>
-            <li><a href="Intruduce.html">intruduce</a></li>
+            <li><a href="Intruduce.html">introduce</a></li>
             <li><a href="habbit.html">habbit</a></li>
             
             <li><a href="contact.html">contact </a></li>
@@ -37,15 +37,19 @@
 
     <form action="">
 
-        <input type="text" class="box" placeholder="could you tell me your name,please?">
-        <input type="email" class="box" placeholder="Next is your email">
-        <input type="password" class="box" placeholder="your password">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder=" what are you going to tell me"></textarea>
+        <input type="text" class="box" placeholder="could you tell me your name,please?" id="name" autocomplete="off"
+		>
+        <input type="email" class="box" placeholder="Next is your email" id="email" autocomplete="off">
+        <input type="text" class="box" placeholder="your major"id="major" autocomplete="off">
+        <textarea name="" id="message" cols="30" rows="10" class="box message" placeholder=" what are you going to tell me"></textarea>
     
         
-               <button class="btn" onclick="myFunction()">send messge </button> 
+               <button id="btn" onclick="myFunction()">send messge </button> 
     
     </form>
+	
+	
+	
     
     <div class="content">
     
@@ -78,7 +82,7 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="index.html">home</a>
-            <a href="intruduce.html">intruduce</a>
+            <a href="intruduce.html">introduce</a>
             <a href="habbit.html">myhabbit</a>
             <a href="contact.html">contact</a>
         </div>
@@ -105,6 +109,7 @@
 
 
 <script src="script.js"></script>
-
+  <script src="https://smtpjs.com/v3/smtp.js">
 </body>
+ 
 </html>
